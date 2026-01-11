@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Niteesh Kumar Soundra Pandian | Data Scientist & MSDS @ UW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">N<span>.</span></div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <div class="hero-text">
+          <p class="eyebrow">MS in Data Science · University of Washington</p>
+          <h1>Hi, I'm <span class="accent">Niteesh</span>.</h1>
+          <p class="tagline">
+            Data scientist focused on <strong>ML</strong>, <strong>NLP</strong>, and <strong>recommender systems</strong>,
+            with experience shipping production models for large-scale e‑commerce and building interactive analytics experiences.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+          <div class="hero-meta">
+            <span>Seattle, WA · University of Washington MSDS (2025–2027)</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h2>Currently</h2>
+          <ul>
+            <li>MS in Data Science, University of Washington</li>
+            <li>Teaching Assistant, Foster School of Business (MKTG 466)</li>
+            <li>Previously Data Scientist I at TATA CLiQ E‑commerce</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-container">
+          <img src="profile.jpg" alt="Niteesh Kumar" class="profile-img" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <p>ML, NLP, and analytics work across e‑commerce, education, and research.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <h3>Teaching Assistant · Foster School of Business</h3>
+            <p>University of Washington · Seattle, USA · Sep 2025 – Present</p>
+          </div>
+          <ul class="timeline-body">
+            <li>Supported MKTG 466: Digital Marketing Analytics across statistical analysis and applied ML concepts.</li>
+            <li>Mentored 40+ students building predictive models and Tableau dashboards for data‑driven marketing insights.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <h3>Data Scientist I · TATA CLiQ E‑commerce</h3>
+            <p>Bengaluru, India · Jul 2022 – Aug 2025</p>
+          </div>
+          <ul class="timeline-body">
+            <li>Built an ALBERT‑based multi‑task query understanding model for category and intent prediction, improving precision from 57% to 71% while reducing long‑tail errors. </li>
+            <li>Developed a CatBoost‑based RTO risk model using behavioral and logistics features, reducing fraudulent return‑to‑origin by 4% via workflow integration. </li>
+            <li>Designed a lightweight relevance scoring layer that combined engagement features across 1.2M SKUs, delivering a 2% CTR gain with business‑led boosting. </li>
+            <li>Improved Wishlist Recovery with a hybrid similarity model (BERT embeddings + user‑item signals), lifting interaction rates from 7% to 15%. </li>
+            <li>Enhanced search ranking via an XGBoostRanker with updated session and item features, raising NDCG@40 from 0.76 to 0.84. </li>
+            <li>Boosted CRM personalization by generating customer–brand affinity vectors using prod2vec‑style sequence embeddings, increasing interaction from 18% to 27%. </li>
+            <li>Built a low‑latency autosuggestion ranker (GBT + recency/popularity/behavior features) with seasonal query boosting, improving suggestion engagement by 3%. </li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <h3>DL Research Intern · NIT Tiruchirappalli</h3>
+            <p>Tiruchirappalli, India · Jan 2022 – Jun 2022</p>
+          </div>
+          <ul class="timeline-body">
+            <li>Built a CNN‑based classifier for knee osteoarthritis and muscle injury detection on 160K X‑ray and ultrasound images using transfer learning (Xception) and strong augmentation. </li>
+            <li>Fine‑tuned Xception to 86% cross‑validated accuracy and integrated predictions with an SMA‑based actuation prototype for physiotherapy feedback. </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section-header">
+        <h2>Education</h2>
+      </div>
+      <div class="cards-grid">
+        <article class="card">
+          <h3>MS in Data Science</h3>
+          <p class="card-subtitle">University of Washington, Seattle · Sep 2025 – Mar 2027</p>
+          <p>Coursework and research at the intersection of ML, NLP, and data‑driven decision making.</p>
+        </article>
+        <article class="card">
+          <h3>B.Tech · Instrumentation & Control (Major), Computer Science (Minor)</h3>
+          <p class="card-subtitle">National Institute of Technology, Tiruchirappalli · Jul 2018 – May 2022</p>
+          <p>Strong foundations in control systems, computing, and applied machine learning.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>Interactive, ML‑driven projects with an emphasis on NLP, LLMs, and human‑in‑the‑loop analytics.</p>
+      </div>
+
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="llm">LLMs</button>
+        <button class="filter-btn" data-filter="ml-systems">ML Systems</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- NMT -->
+        <article class="project-card" data-tags="nlp ml-systems">
+          <div class="project-header">
+            <h3>Self‑Training Based Document‑Level NMT (English–Tamil)</h3>
+            <span class="project-pill">NLP</span>
+            <span class="project-pill">Sequence Models</span>
+          </div>
+          <p class="project-summary">
+            Document‑level English→Tamil NMT with context windows, back‑translation, and self‑training to improve BLEU and discourse coherence over a strong baseline.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Extended MarianMT with document context windows, sentence‑level back‑translation, and self‑training on unlabeled corpora, improving BLEU by +4.9% vs baseline. </li>
+              <li>Incorporated BERTScore‑based semantic loss and progressive adaptation (MMT + FT + HL + Span) to improve semantic fidelity and translation stability. </li>
+              <li>Evaluated both automatic metrics and qualitative discourse coherence across multi‑sentence documents.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- RAG Chatbot -->
+        <article class="project-card" data-tags="llm nlp ml-systems">
+          <div class="project-header">
+            <h3>AI‑Powered Document Q&A Chatbot using RAG</h3>
+            <span class="project-pill">LLMs</span>
+            <span class="project-pill">RAG</span>
+          </div>
+          <p class="project-summary">
+            Retrieval‑Augmented Generation chatbot for querying 1,000+ newsgroup documents, with multi‑turn conversations, semantic search, and real‑time analytics in a Streamlit UI.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Built a conversational system with LlamaIndex and RAG over large‑scale document collections. </li>
+              <li>Designed multi‑turn conversation handling using LangChain agents for context‑aware responses. </li>
+              <li>Created a responsive Streamlit front‑end with semantic search, usage analytics, and GitHub‑hosted source. </li>
+            </ul>
+            <!-- Replace # with your GitHub link -->
+            <a href="#" class="inline-link" target="_blank" rel="noopener">View source on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Keystroke Cognitive Load -->
+        <article class="project-card" data-tags="ml-systems">
+          <div class="project-header">
+            <h3>Keystroke‑Based Cognitive Load Classification</h3>
+            <span class="project-pill">Time Series</span>
+            <span class="project-pill">Real‑Time ML</span>
+          </div>
+          <p class="project-summary">
+            Real‑time pipeline that predicts HIGH/MED/LOW cognitive load from keystroke dynamics, combining LSTM and Transformer‑based sequence models.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Engineered features from inter‑key intervals, pauses, and errors to benchmark an LSTM for cognitive‑load classification. </li>
+              <li>Developed a Transformer embedding model that improved robustness and accuracy over the LSTM baseline. </li>
+              <li>Built a real‑time keystroke capture UI and visualization for instant load prediction and feedback. </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>End‑to‑end ML: from modeling and evaluation to deployment and experimentation.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div>
+          <h3>Languages & Core</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">C++</span>
+            <span class="chip">R</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>ML & Modeling</h3>
+          <div class="chips">
+            <span class="chip">Scikit‑learn</span>
+            <span class="chip">XGBoost</span>
+            <span class="chip">CatBoost</span>
+            <span class="chip">TensorFlow</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">Keras</span>
+            <span class="chip">Time Series</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>NLP & LLMs</h3>
+          <div class="chips">
+            <span class="chip">HuggingFace Transformers</span>
+            <span class="chip">BERT / ALBERT / T5</span>
+            <span class="chip">GPT‑based Models</span>
+            <span class="chip">Tokenization & Embeddings</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">LlamaIndex</span>
+            <span class="chip">RAG</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>MLOps & Data</h3>
+          <div class="chips">
+            <span class="chip">MLflow</span>
+            <span class="chip">Airflow</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Jenkins</span>
+            <span class="chip">Spark</span>
+            <span class="chip">AWS (EC2, S3, Lambda, SageMaker)</span>
+          </div>
+        </div>
+
+        <div>
+          <h3>Analytics & Viz</h3>
+          <div class="chips">
+            <span class="chip">Pandas</span>
+            <span class="chip">NumPy</span>
+            <span class="chip">Tableau</span>
+            <span class="chip">Streamlit</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
+      <div class="section-header">
+        <h2>Publications</h2>
+      </div>
+      <article class="card">
+        <h3>Uncertainty‑aware Contextual Multi‑armed Bandits for Recommendations in E‑commerce</h3>
+        <p class="card-subtitle">IAES International Journal of Artificial Intelligence (IJ‑AI), 2025</p>
+        <p>
+          Proposed a contextual bandit‑based approach with uncertainty estimation to improve recommendation relevance in e‑commerce environments.
+        </p>
+        <!-- Replace # with ResearchGate / DOI -->
+        <a href="https://www.researchgate.net/publication/392485072_Uncertainty-aware_contextual_multi-armed_bandits_for_recommendations_in_e-commerce" class="inline-link" target="_blank" rel="noopener">View publication</a>
+      </article>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Open to internships and collaborations in ML, NLP, and data science.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:nksp2@uw.edu">nksp2@uw.edu</a></li>
+            <li><strong>Location:</strong> Seattle, Washington, USA</li>
+            <!-- Replace # with your actual profiles -->
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/niteesh-kumar-s/" target="_blank" rel="noopener">View profile</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/niteeshkcl-create" target="_blank" rel="noopener">View repos</a></li>
+          </ul>
+        </div>
+            <form class="contact-form" action="https://formspree.io/f/meeejyke" method="POST" id="contactForm">
+              <div class="form-row">
+                <label for="name">Name</label>
+                <input id="name" type="text" name="name" required />
+              </div>
+              <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required />
+              </div>
+              <div class="form-row">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <input type="hidden" name="_subject" value="New message from Niteesh's portfolio">
+              <button type="submit" class="btn primary full">Send Message</button>
+            </form>
+            <p class="form-note">You'll hear back within 24 hours.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Niteesh Kumar Soundra Pandian</span>
+    <span>Built with HTML, CSS, and vanilla JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
