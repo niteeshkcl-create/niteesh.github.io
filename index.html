@@ -269,6 +269,89 @@
           </div>
         </article>
 
+
+
+        <article class="project-card" data-tags="ml-systems">
+          <div class="project-header">
+            <h3>Multimodal Reliability & Fleet Orchestrator (MRFO)</h3>
+            <span class="project-pill">Digital Twin</span>
+            <span class="project-pill">RL</span>
+          </div>
+          <p class="project-summary">
+            An end-to-end "Digital Twin" monitoring system for delivery robot fleets, integrating predictive RUL, vision-based inspection, and Reinforcement Learning.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Implemented a <strong>Predictive Health Layer</strong> using LSTM networks to forecast Remaining Useful Life (RUL) based on NASA CMAPSS sensor data.</li>
+              <li>Developed a <strong>Vision Inspection Layer</strong> using Xception/ResNet architectures to classify structural integrity into Healthy, Minor Wear, and Critical Damage.</li>
+              <li>Designed a <strong>Contextual Bandit Agent</strong> (Thompson Sampling) within a custom OpenAI Gym environment to optimize maintenance vs. dispatch decisions.</li>
+              <li>Built a real-time <strong>Streamlit Dashboard</strong> featuring interactive Plotly visualizations of fleet health and cumulative reward logs.</li>
+            </ul>
+          </div>
+        </article>
+      
+        <article class="project-card" data-tags="ml-systems">
+          <div class="project-header">
+            <h3>Skip‑Predict AI: ASO Efficiency Modeling</h3>
+            <span class="project-pill">Bio-ML</span>
+            <span class="project-pill">Regression</span>
+          </div>
+          <p class="project-summary">
+            ML model for predicting the efficiency of Antisense Oligonucleotides (ASOs) for exon skipping using genomic feature engineering.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Engineered biological features from 13k+ raw data points, including <strong>K-mer encoding (3-mers)</strong>, GC content, and Melting Temperature ($T_m$).</li>
+              <li>Trained and benchmarked <strong>Random Forest and XGBoost</strong> regressors, achieving an $R^2$ score of 0.38 for complex genomic interactions.</li>
+              <li>Analyzed model performance through Actual vs. Predicted residuals to identify feature importance in RNA sequence efficiency.</li>
+            </ul>
+          </div>
+        </article>
+      
+        <article class="project-card" data-tags="ml-systems">
+          <div class="project-header">
+            <h3>Shadow‑Net: Graph ML Cybersecurity</h3>
+            <span class="project-pill">Graph Neural Networks</span>
+            <span class="project-pill">Anomaly Detection</span>
+          </div>
+          <p class="project-summary">
+            A cybersecurity monitoring system using Graph Machine Learning to detect lateral movement in enterprise networks via authentication and DNS logs.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Constructed directed network graphs (Users &rarr; Computers) using <strong>Node2Vec</strong> to generate structural embeddings of network topology.</li>
+              <li>Deployed an <strong>Isolation Forest</strong> model to detect anomalous "hot paths" and suspicious lateral movement with a throughput of >3,400 records/sec.</li>
+              <li>Integrated real-world <strong>LANL DNS datasets</strong> to identify Command & Control (C2) communication patterns through structural outliers.</li>
+              <li>Created interactive graph visualizations using <strong>Pyvis</strong> to highlight "hot nodes" for security analyst investigation.</li>
+            </ul>
+          </div>
+        </article>
+      
+        <article class="project-card" data-tags="ml-systems">
+          <div class="project-header">
+            <h3>High‑Frequency Alpha‑Agent</h3>
+            <span class="project-pill">DQN</span>
+            <span class="project-pill">Sentiment Analysis</span>
+          </div>
+          <p class="project-summary">
+            Autonomous trading agent using Deep Reinforcement Learning (DQN) and FinBERT-based sentiment analysis for risk-adjusted market returns.
+          </p>
+          <button class="project-toggle">Details</button>
+          <div class="project-body">
+            <ul>
+              <li>Developed a custom <strong>Deep Q-Network (PyTorch)</strong> to optimize for Sharpe Ratio in a simulated stock environment.</li>
+              <li>Integrated a <strong>FinBERT</strong> NLP pipeline to process financial news headlines into sentiment scores as auxiliary state features.</li>
+              <li>Implemented <strong>SHAP (Shapley Additive Explanations)</strong> to provide model interpretability, visualizing how balance, shares, and sentiment influence "Buy/Sell" decisions.</li>
+              <li>Built a robust data pipeline utilizing <code>yfinance</code> for historical price ingestion and automated feature scaling.</li>
+            </ul>
+          </div>
+        </article>
+
+        
+
         
       </div>
     </section>
